@@ -8,6 +8,7 @@
   justify-content: space-between;
 
   &__desc {
+    margin: 4rem 0;
     text-align: center;
     color: #ffffff;
     font-family: Roboto;
@@ -23,6 +24,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @include media(small) {
+    width: 100%;
+  }
   
   
   &__inner {
@@ -30,6 +35,10 @@
     display: flex;
     max-width: 32rem;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+
+    @include media(small) {
+      max-width: 100%; 
+    }
   }
   
   &__icon {

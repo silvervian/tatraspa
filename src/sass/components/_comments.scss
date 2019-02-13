@@ -1,10 +1,222 @@
 .comments {
-
-  &__desc {
-
+  padding: 8rem 0rem 6.5rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../../img/comment-bg.png) no-repeat center;
+  
+  @include media(small) {
+    background: none;
   }
 
+  &__desc {
+    padding: 0 1rem;
+    margin: 3.5rem 0 8rem;
+    color: #6a6d72;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.7rem;
+  }
+
+  &__inner {
+    padding: 0 1rem;
+    display: flex;
+    max-width: 120rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  } 
+
   &__box {
+    // margin-left: 10rem;
+    margin-bottom: 8rem;
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    // grid-auto-rows: 3rem;
+
+    & > * {
+      margin-bottom: 2rem; 
+    }
+  }
+
+  &__stars {
+    grid-column: 2 / 3;
+    display: flex;
     
+    @include media(small) {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__title {
+    grid-column: 2 / 3;
+    position: relative;
+    color: #2f2f2f;
+    font-family: Spinnaker;
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-transform: uppercase;
+    
+    @include media(small) {
+      grid-column: 1 / 3;
+      font-size: 1.8rem;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: -8rem;
+      width: 59px;
+      height: 43px;
+      background: url(../../img/quotes.png) no-repeat;
+
+      @include media(small) {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    grid-column: 2 / 3;
+    grid-row: 3 / span 2;
+    max-width: 384px;
+    color: #6a6d72;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    
+    @include media(small) {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__person {
+    grid-row: 8 / 10;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    grid-auto-rows: 4rem;
+    
+    @include media(small) {
+      grid-column: 1;
+    }
+  }
+
+  &__img {
+    grid-row: 1 / 3;
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    
+  }
+
+  &__nick {
+    color: #2f2f2f;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 3rem;
+    flex: 1 1 30%;
+  }
+
+  &__logo {
+    width: 173px;
+    height: 37px;
+    flex: 0 2 30%;
+  }
+
+  &__dots {
+    display: flex;
+  } 
+}
+
+.star {
+  margin-right: .4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #00a680;
+  background-color: #ffffff;
+  border-radius: 50%;
+  
+  &__inner {
+    width: 8px;
+    height: 8px;
+    background-color: #00a680;
+    border-radius: 50%;
+  }
+}
+
+.dot {
+  margin: 0 .7rem 5rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  
+  &--1 {
+    background-color: #bf9e6a;
+  }
+}
+
+.avatar {
+  margin: 4rem 0 5rem; 
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(213px, 1fr));
+
+  @include media(small) {
+    display: none;
+  }
+
+  &__inner {
+    padding: 2rem;
+    min-width: 213px;
+    height: 213px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+
+    &--1 {
+      background: url(../../img/avatar1.jpg) no-repeat center / cover;
+    }
+    &--2 {
+      background: url(../../img/avatar2.jpg) no-repeat center / cover;
+    }
+    &--3 {
+      background: url(../../img/avatar3.jpg) no-repeat center / cover;
+    }
+    &--4 {
+      background: url(../../img/avatar4.jpg) no-repeat center / cover;
+    }
+    &--5 {
+      background: url(../../img/avatar5.jpg) no-repeat center / cover;
+    }
+    &--6 {
+      background: url(../../img/avatar6.jpg) no-repeat center / cover;
+    }
+    &--7 {
+      background: url(../../img/avatar7.jpg) no-repeat center / cover;
+    }
+    &--8 {
+      background: url(../../img/avatar8.jpg) no-repeat center / cover;
+    }
+    &--9 {
+      background: url(../../img/avatar9.jpg) no-repeat center / cover;
+    }
+  }
+
+  &__nick {
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.49);
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 3rem;
   }
 }
