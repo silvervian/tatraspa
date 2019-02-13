@@ -1,0 +1,18 @@
+.partners {
+  padding: 7rem 1rem 7rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__inner {
+    max-width: 120rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__logo {
+    padding: 0 4rem 4rem;
+  }
+}

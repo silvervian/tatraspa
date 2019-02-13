@@ -1,0 +1,26 @@
+.info {
+  padding: 3.4rem 1rem 3.1rem;
+  background: url(../../img/watermark.png) no-repeat center, #bf9e6a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > * {
+    margin: 1rem 0;
+  }
+
+  &__desc {
+    max-width: 619px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 2.1rem;
+    font-weight: 300;
+    line-height: 3rem;
+  }
+
+  &__tel {
+    color: inherit;
+    font-weight: 500;
+  }
+}
