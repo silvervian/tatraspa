@@ -1,0 +1,125 @@
+.hero {
+  padding-top: 17rem; 
+  min-height: 90.5rem;
+  background: url(../../img/hero.png) no-repeat center / cover, linear-gradient(rgb(0,0,0),rgb(0,0,0));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__desc {
+    text-align: center;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 3.6rem;
+    white-space: pre-line;
+  }
+}
+
+.form-hero {
+  max-width: 120rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  
+  &__inner {
+    margin: .7rem;
+    display: flex;
+    max-width: 32rem;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  }
+  
+  &__icon {
+    padding: 2rem;
+    width: 7.2rem;
+    
+    &--calendar {
+      background: url(../../img/input-calendar.png) no-repeat center, #fff;
+    }
+    
+    &--adults {
+      background: url(../../img/select-parent.png) no-repeat center, #fff;
+    }
+
+    &--children {
+      background: url(../../img/select-children.png) no-repeat center, #fff;
+    }
+  }
+  
+  &__input {
+    border: none;
+    padding-left: 2rem;
+    height: 72px;
+    width: 25rem;
+    color: #6a6d72;
+    font-family: Roboto;
+    font-size: 1.6;
+    font-weight: 400;
+    line-height: 42.27px;
+    border-left: 1px solid #bf9e6a;
+    outline: none;
+    appearance: none;
+    background: url(../../img/select-arrow.png) no-repeat 90% center, #ffffff;
+    cursor: pointer;
+  }
+
+  &__select {
+    padding-left: 2rem;
+    border: none;
+    outline: none;
+    border-left: 1px solid #bf9e6a;
+    width: 25rem;
+    height: 72px;
+    padding: 1rem;
+    color: #6a6d72;
+    font-family: Roboto;
+    font-size: 1.6;
+    font-weight: 400;
+    line-height: 42.27px;
+    appearance: none;
+    background: url(../../img/select-arrow.png) no-repeat 90% center, #ffffff;
+    cursor: pointer;
+  }
+}
+
+
+.menu-hero {
+  margin-top: 1rem;
+  max-width: 120rem;
+  display: flex;
+  
+  @include media(large) {
+    flex-wrap: wrap;
+  }
+  
+  &__item {
+    text-align: center;
+    padding: 3rem 7rem;
+    background: #ffffff;
+    color: #2f2f2f;
+    font-family: Spinnaker;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+    @include media(large) {
+      padding: 3rem 0rem;
+      width: 50%;
+    }
+    
+    @include media(small) {
+      width: 100%;
+      text-align: center;
+    }
+
+    &--active, &:hover {
+      background: #f4f4f4;
+      color: #bf9e6a;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.navigation {
+  position: relative;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  max-width: 120rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+  
+  @include media(small) {
+    flex-wrap: nowrap;
+  }
+
+  &__logo {
+    width: 30rem;
+    
+    @include media(small) {
+      width: 28rem;
+    }
+  }
+
+  &__list {
+    padding: 2rem 0;
+    display: flex;
+    list-style: none;
+
+    @include media(large) {
+      display: none;
+    }
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    padding: 0 2rem;
+    color: #2f2f2f;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    transition: .3;
+
+    &--active, &:hover {
+      color: #bf9e6a;
+    }
+  }
+}
+
+.navigation-wrapper {
+  background: #fff;
+}

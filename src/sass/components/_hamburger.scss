@@ -1,0 +1,110 @@
+.hamburger {
+  display: none;
+  position: relative;
+  user-select: none;
+  z-index: 6;
+
+  @include media(medium) {
+      display: block;
+  }
+
+  &__checkbox {
+      display: block;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      width: 4rem;
+      height: 3.2rem;
+      opacity: 0;
+      cursor: pointer;
+      -webkit-touch-callout: none;
+      z-index: 6;
+
+      &:checked ~ span {
+          background: #232323;
+          transform: rotate(-45deg) translate(3px, -1px);
+      }
+
+      &:checked ~ span:nth-of-type(2) {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.2, 0.2);
+      }
+
+      &:checked ~ span:nth-of-type(3) {
+          transform: rotate(45deg) translate(2px, 0px);
+      }
+  }
+
+  span {
+      display: block;
+      position: relative;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      border-radius: 3px;
+      background: #232323;
+      z-index: 5;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+      background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+      opacity 0.55s ease;
+  }
+
+  span:first-of-type { transform-origin: 100% 0%; }
+  span:last-of-type { transform-origin: 100% 100%; }
+}
+
+.menu-mobile {
+  position: fixed;
+  display: flex;
+  top: 9rem;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(200%);
+  width: 100vw;
+  padding: 2rem 0 2rem 0;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  transition: all .4s ease-in-out;
+  opacity: 0;
+  box-shadow: 0px 4px 7px rgba(0,0,0,.1);
+  z-index: 10;
+
+  &__list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      // flex-wrap: wrap;
+      align-items: center;
+  }
+
+  &__item {
+      padding: 10px 0;
+      font-size: 2.2rem;
+  }
+
+  &__link {
+    padding: .5rem 2rem;
+    color: #2f2f2f;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    transition: .3;
+
+  &--active, &:hover {
+    color: #bf9e6a;
+  }
+}
+
+  &--visible {
+      transform: translate(0px);
+      opacity: 1;
+  }
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}

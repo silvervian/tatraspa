@@ -1,0 +1,53 @@
+.contact {
+  position: relative;
+  background: url(../../img/bg_contact.png) no-repeat center / cover, #2f2f2f;
+  padding: 5rem 1rem 4rem;
+  
+  
+  &__inner {
+    margin: 0 auto;
+    max-width: 120rem;
+    display: flex;
+    flex-direction: column;
+    
+    @include media(wide) {
+      align-items: center;
+    }
+    
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: 0; right: 10px;
+      width: 474px;
+      height: 340px;
+      background: url(../../img/ppl_contact.png) no-repeat;
+  
+      @include media(wide) {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    color: #bf9e6a;
+    font-family: Spinnaker;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 5.5rem;
+    text-transform: uppercase;
+    
+    @include media(large) {
+      text-align: center;
+    }
+  }
+
+  &__desc {
+    margin: 3rem 0;
+    max-width: 685px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.7rem;
+  }
+}

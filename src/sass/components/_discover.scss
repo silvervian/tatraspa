@@ -1,0 +1,109 @@
+.discover {
+  padding: 7rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  @include media(small) {
+    padding: 7rem 0;
+  }
+
+  &__desc {
+    margin: 3rem 0 7rem;
+    color: #6a6d72;
+    font-family: Roboto;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.7rem;
+
+    @include media(small) {
+      padding: 0 1rem;
+    }
+  }
+
+  &__inner {
+    margin: 0 auto;
+    max-width: 120rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__box {
+    margin: 1rem;
+    width: 380px;
+    height: 497px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.09);
+    
+    @include media(small) {
+      margin: 1rem 0;
+      width: 100%;
+    }
+
+    &--1 {
+      background: url(../../img/discover1.png) no-repeat bottom / contain;
+    }
+    &--2 {
+      background: url(../../img/discover2.png) no-repeat bottom / contain;
+    }
+    &--3 {
+      background: url(../../img/discover3.png) no-repeat bottom / contain;
+    }
+    &--4 {
+      background: url(../../img/discover4.png) no-repeat bottom / contain;
+    }
+    &--5 {
+      background: url(../../img/discover5.png) no-repeat bottom / contain;
+    }
+    &--6 {
+      background: url(../../img/discover6.png) no-repeat bottom / contain;
+    }
+  }
+
+  &__title {
+    margin-top: 4.5rem;
+    color: #2f2f2f;
+    font-family: Spinnaker;
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    margin-top: 3.5rem;
+    text-align: center;
+    color: #6a6d72;
+    font-family: Roboto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.1rem;
+  }
+
+  &__price {
+    margin-top: 2.5rem;
+    text-align: center;
+    color: #2f2f2f;
+    font-family: Spinnaker;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+    text-transform: uppercase;
+
+    &--bold {
+      color: #bf9e6a;
+      font-family: Roboto;
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.dot {
+  color: #bf9e6a;
+  font-family: "Roboto";
+  font-weight: 300;
+}

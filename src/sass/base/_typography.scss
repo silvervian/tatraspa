@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Spinnaker');
+@import url('https://use.fontawesome.com/releases/v5.7.1/css/all.css');
+body {
+  font-family: sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+
+.primary {
+  padding-top: 5rem;
+  text-align: center;
+  color: #ffffff;
+  font-family: Spinnaker;
+  font-size: 7.2rem;
+  line-height: 7.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: pre-line;
+
+  &--center {
+    text-align: center;
+  }
+  
+  @include media(small) {
+    font-size: 5.2rem;
+    line-height: 5.2rem;
+  }
+}
+
+.secondary {
+  color: #2f2f2f;
+  font-family: Spinnaker;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 5.5rem;
+  text-transform: uppercase;
+
+  &--center {
+    text-align: center;
+  }
+}
+
+.tertiary {
+  color: #2f2f2f;
+  font-family: Spinnaker;
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
