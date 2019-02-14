@@ -6,7 +6,7 @@ function init() {
   checkBox.addEventListener('change', () => {
     if (checkBox.checked === true) {
       hiddenMenu.classList.add('menu-mobile--visible');
-      document.querySelector('body').classList.add('stop-scrolling');
+      // document.querySelector('body').classList.add('stop-scrolling');
     } else {
       hiddenMenu.classList.remove('menu-mobile--visible');
       document.querySelector('body').classList.remove('stop-scrolling');

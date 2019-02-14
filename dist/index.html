@@ -32,24 +32,25 @@
 
         <div class="menu-mobile">
           <ul class="menu-mobile__list">
-            <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">home</a></li>
-            <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">book packages</a></li>
-            <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">book attraction</a></li>
-            <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">how it works</a></li>
-            <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">blog</a></li>
-            <li class="menu-mobile__link"><a class="menu-mobile__link" href="#">contact</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link menu-mobile__link--active2" href="#home">home</a>
+            </li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link" href="#discover">book packages</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link" href="#contact">book attraction</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link" href="#howit">how it works</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link" href="#inspiration">blog</a></li>
+            <li class="menu-mobile__item"><a class="menu-mobile__link" href="#info">contact</a></li>
           </ul>
         </div>
 
-        <a href="#" class="navigation__logo"><img src="img/logo.png" alt="tatraspa"></a>
-        <a href="#" class="navigation__logo--small"><img src="img/logo-solo.png" alt="tatraspa"></a>
+        <a href="#home" class="navigation__logo"><img src="img/logo.png" alt="tatraspa"></a>
+        <a href="#home" class="navigation__logo--small"><img src="img/logo-solo.png" alt="tatraspa"></a>
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link navigation__link--active">home</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">book packages</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">book attraction</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">how it works</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">blog</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link">contact</a></li>
+          <li class="navigation__item"><a href="#home" class="navigation__link navigation__link--active">home</a></li>
+          <li class="navigation__item"><a href="#discover" class="navigation__link">book packages</a></li>
+          <li class="navigation__item"><a href="#contact" class="navigation__link">book attraction</a></li>
+          <li class="navigation__item"><a href="#howit" class="navigation__link">how it works</a></li>
+          <li class="navigation__item"><a href="#inspiration" class="navigation__link">blog</a></li>
+          <li class="navigation__item"><a href="#info" class="navigation__link">contact</a></li>
         </ul>
 
         <div class="hamburger">
@@ -63,7 +64,7 @@
     </div>
   </header>
 
-  <section class="hero">
+  <section id="home" data-scroll class="hero">
     <h1 class="primary">Discover Pearls of
       Southern Poland</h1>
     <span class="hero__desc">Fully customized day-by-day itinerary travel
@@ -129,7 +130,7 @@
     </div>
   </section> <!-- .hero -->
 
-  <section class="discover">
+  <section data-scroll id="discover" class="discover">
     <h2 class="secondary secondary--center">Discover Packages</h2>
     <p class="section-desc">There are many ways to spend great time in Poland, choose yours and customize it.</p>
     <div class="discover__inner">
@@ -200,7 +201,7 @@
     </div>
   </section> <!-- .discover -->
 
-  <section class="contact">
+  <section data-scroll id="contact" class="contact">
     <div class="contact__inner">
       <h2 class="contact__title">you need a dedicated package?</h2>
       <p class="contact__desc">Contact with us, one of our concierge will create special package
@@ -210,7 +211,7 @@
     </div>
   </section> <!-- .contact -->
 
-  <section class="howit">
+  <section data-scroll id="howit" class="howit">
     <h2 class="secondary secondary--center">how it works</h2>
     <span class="section-desc">Choose how you want to book your trip to Poland. We have created 4 paths for
       bozoking.</span>
@@ -352,7 +353,7 @@
     <a href="#" class="button">see all reviews & social gallery</a>
   </section> <!-- .comments -->
 
-  <section class="inspiration">
+  <section data-scroll id="inspiration" class="inspiration">
     <h2 class="secondary secondary--center">Inspiration & Expert Advice</h2>
     <span class="section-desc">There are many ways to spend great time in Poland, choose yours and customize it.</span>
     <div class="inspiration__inner">
@@ -405,7 +406,7 @@
     </div>
   </section> <!-- .partners -->
 
-  <section class="info">
+  <section data-scroll id="info" class="info">
     <h2 class="secondary secondary--center secondary--light">We Are Here For You</h2>
     <span class="info__desc">Fill out the form to ask us more about packages and dedicated trips or call us at <a
         class="info__tel" href="tel:+48932234032">+48 932
@@ -417,7 +418,7 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__general">
-        <a class="footer__logo" href=""><img src="img/logo-footer.png" alt="tatraspa"></a>
+        <a class="footer__logo" href="#home"><img src="img/logo-footer.png" alt="tatraspa"></a>
         <p class="footer__desc">Etiam porttitor finibus facilisis. Nulla ultrices sodales nibh vitae gravida. Sed non
           vehicula massa. Phasellus
           sollicitudin pharetra risus, ut malesuada sapien sem

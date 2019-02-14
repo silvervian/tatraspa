@@ -60,7 +60,14 @@
     font-weight: 400;
     line-height: 12.49px;
     text-transform: uppercase;
+    transition: .2s;
 
+    &:hover {
+      background-color: #bf9e6a;
+      color: #2f2f2f;
+      font-weight: 700;
+    }
+    
     & i {
       padding: 1rem;
       font-size: 2rem;
@@ -89,5 +96,10 @@
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.4rem;
+    transition: .2s;
+
+    &:hover {
+      color: shade(#6a6d72, 70%);
+    }
   }
 }

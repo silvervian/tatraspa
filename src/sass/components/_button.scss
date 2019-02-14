@@ -10,8 +10,24 @@
   text-transform: uppercase;
   background: #bf9e6a;
   width: fit-content;
+  border: 2px solid transparent;
+  transition: .2s;
+  
+  &:hover {
+    background: #2f2f2f;
+    border: 2px solid #bf9e6a;
+
+  }
   
   &--dark {
     background: #2f2f2f;
+    border: 2px solid transparent;
+    
+    &:hover {
+      background: #bf9e6a;
+      border: 2px solid #2f2f2f;
+      color: #2f2f2f;
+      font-weight: 700;
+    }
   }
 }
